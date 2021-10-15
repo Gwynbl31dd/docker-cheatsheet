@@ -21,6 +21,29 @@ Run container and expose an interactive session
 docker run -it <image> 
 ```
 
+Run container in detached mode
+
+```bash
+docker run -d <image> 
+```
+
+Start a container
+
+```bash
+docker start <name>
+```
+
+Start a container in attached mode
+
+```bash
+docker start -a <name>
+```
+Attach an already running container
+
+```bash
+docker attache <name>
+```
+
 List running containers
 
 ```bash
@@ -38,6 +61,13 @@ Stop container
 ```bash
 docker stop <container>
 ```
+
+Check the logs
+
+```bash
+docker logs <name>
+```
+
 
 # Dockerfile
 
