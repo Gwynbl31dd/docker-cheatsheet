@@ -38,3 +38,20 @@ Stop container
 ```bash
 docker stop <container>
 ```
+
+# Dockerfile
+
+```Dockerfile
+FROM <baseImage>
+
+# Will also create a directory
+WORKDIR <path>
+
+COPY <from> <to>
+
+RUN <command>
+
+EXPOSE <port>
+
+CMD [<cmd>,<options>]
+```
