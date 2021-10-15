@@ -12,7 +12,7 @@ docker build .
 Run container 
 
 ```bash
-docker run -p <expose_port>:<source_port> <image> 
+docker run -p <local_port>:<internal_port> <image> 
 ```
 
 Run container and expose an interactive session
