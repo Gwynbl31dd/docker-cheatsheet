@@ -9,6 +9,18 @@ Build docker image
 docker build .
 ```
 
+Build docker image with a tag
+
+```bash
+docker build -t <tag> .
+```
+
+Re-tag image
+
+```bash
+docker tag <image/tag> <new_tag>
+```
+
 Run container 
 
 ```bash
@@ -96,6 +108,18 @@ Start minikube
 minikube start
 ```
 
+Start with a specific drive
+
+```
+minikube start --drive=<driver> (E.g docker)
+```
+
+Show the status
+
+```sh
+minikube status
+```
+
 Open the minikube dashboard
 
 ```sh
@@ -108,4 +132,28 @@ cluster info
 
 ```sh
 kubectl cluster-info
+```
+
+Get the deployments
+
+```sh
+kubectl get deployments
+```
+
+Get the pods
+
+```sh
+kubectl get pods
+```
+
+Delete deployment
+
+```
+kubectl delete deployment <name>
+```
+
+Create simple deployment
+
+```
+kubectl create deployment <name> --image=<image>
 ```
