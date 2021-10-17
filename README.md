@@ -126,6 +126,12 @@ Open the minikube dashboard
 minikube dashboard
 ```
 
+Expose a servive
+
+```sh
+minikube service <name>
+```
+
 ## Kubectls
 
 cluster info
@@ -156,4 +162,34 @@ Create simple deployment
 
 ```
 kubectl create deployment <name> --image=<image>
+```
+
+Expose a deployment
+
+```sh
+kubectl expose deployments name --type=<type> --port=<port>
+```
+
+Get services
+
+```sh
+kubectl get services
+```
+
+Scale replicas
+
+```sh
+kubectl scale deployment/<name> --replicas=<number_of_replica>
+```
+
+Update deployment
+
+```sh
+kubectl set image deployment/<name> <container_name>=<new_image>
+```
+
+Rollout deployment
+
+```sh
+kubectl rollout status deployment/<name>
 ```
