@@ -85,3 +85,27 @@ EXPOSE <port>
 
 CMD [<cmd>,<options>]
 ```
+
+# Kubernetese
+
+## Minikube
+
+Start minikube
+
+```sh
+minikube start
+```
+
+Open the minikube dashboard
+
+```sh
+minikube dashboard
+```
+
+## Kubectls
+
+cluster info
+
+```sh
+kubectl cluster-info
+```
